@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%274%27 fill=%27%23f28c28%27/%3E%3Cpath d=%27M6 10h20v4H6zM13 14h6v12h-6z%27 fill=%27%23141414%27/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Ригель","description":"Комплексное снабжение строительных площадок: бетон, металлопрокат, инертные материалы, аренда спецтехники.","url":"https://vladislav-jb.github.io/stroy-snab","logo":"https://vladislav-jb.github.io/stroy-snab/assets/og.jpg","telephone":"+7 (900) 000-00-00","address":{"@type":"PostalAddress","streetAddress":"Промышленная ул., 12, стр. 3","addressCountry":"RU"}}
@@ -320,6 +321,15 @@
   }
   .hero__copy .v-display { font-size: clamp(2rem, .8rem + 2.8vw, 3.6rem); }
   .bar__mark i { width: .8em; height: .7em; clip-path: polygon(0 0, 100% 0, 100% 30%, 65% 30%, 65% 100%, 35% 100%, 35% 30%, 0 30%); border-radius: 0; } /* ригель */
+
+  /* подпись разработчика в подвале: «Создан в «Веб-Ателье»» – одинаковая на всех сайтах, не менять */
+  .foot { align-items: center; }
+  .foot__demo { flex-basis: 100%; }
+  .foot__made { display: inline-block; white-space: nowrap; font-style: italic; font-size: var(--v-t-sm); line-height: 1.4; color: var(--v-ink-soft); padding: .4em 0; }
+  .foot__made a { display: inline; margin: 0 0 0 .3em; color: inherit; text-decoration: none; font-family: Calibri, "Carlito", sans-serif; font-weight: 700; font-style: italic; font-size: 1.12em; }
+  .foot__made a:hover { color: var(--v-ink); text-decoration: underline; text-underline-offset: .18em; }
+  .foot__made img { display: inline-block; width: 40px; height: 52px; max-width: none; margin-left: .35em; vertical-align: -7px; }
+  @media (max-width: 860px) { .foot__made { font-size: 1rem; } }
 </style>
 </head>
 <body>
@@ -576,8 +586,8 @@
         </div>
         <footer class="foot">
           <span>Снабжение строительных площадок «Ригель»</span>
-          <span>ООО «Ригель» · ИНН 7700000014</span>
-          <span class="foot__more">Фото: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a></span>
+          <span class="foot__made">Создан в <a href="http://web-atelie.ru/" target="_blank" rel="noopener">«Веб-Ателье»</a><img src="assets/web-atelie.png" alt="" width="40" height="52" loading="lazy" decoding="async"></span>
+          <span class="foot__demo">Демо-концепт сайта компании-снабженца. Название, контакты, цены и отзывы условные, фото – из стоковой библиотеки.</span>
         </footer>
       </div>
     </section>
